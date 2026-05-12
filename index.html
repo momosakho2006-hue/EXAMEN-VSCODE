@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TERANGA FOOD</title>
+    <style>
+        body{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            background-color:#7C2D12;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+            top: 0%;
+        }
+        .LOGO{
+            height: 80px;
+            width: 10%;
+            border-radius: 10px;
+        }
+        .LOGO img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        nav {
+            gap: 30px ;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1C1917;
+            display: flex;
+            width: 50%;
+            border-right: 0%;    
+        }
+        a:hover{
+            color: orangered;
+            transition: 0.3s;
+        }
+         nav  a{
+            gap: 30px ;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1C1917;
+            display: flex;
+            width: 50%;
+           font-size: 22px;
+            border-right: 0%;
+        }
+        .BANNER{
+            background-image: url(images.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0% auto;
+            margin-top: 40px;
+         }
+        .un{
+            color: #D97706;
+            font-weight: bold;
+            font-size: 45px;
+           text-align: center;
+           justify-content: space-between;
+        }
+        .DEUX{
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            align-items: center;
+        }
+        .TROIS{
+            align-items: center;
+           padding: 60px;
+        }
+         .BOUTON{
+            width: 70%;
+            height: 70px;
+            margin: 0% auto;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px;
+            gap: 15px;
+         }  
+         .menu{
+            background-color: #D97706;
+            color: aliceblue;
+            height: 60px;
+            width: 45%;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            }
+          .table{
+            background-color: #D97706;
+            color: aliceblue;
+            height: 60px;
+            width: 45%;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            }
+            .PRESENTATION{
+                padding: 60px;
+                text-align: center;
+                background: #f8f8f8;
+                background-color: #f5f4f4;
+            }
+            .CITY{
+                font-size: 32px;
+                margin-bottom: 20px;
+                color: #7C2D12;
+            }
+            .EVERTON{
+                font-size: 22px;
+
+            }
+            .MENU{
+                padding: 50px;
+                text-align: center;
+               
+            }
+            .PLAT{
+                display: flex;
+                gap: 20PX;
+                justify-content: center;
+                height: auto;
+               
+            }
+            .PLATS{
+                width: 24%;
+                background: white;
+                border-radius: 10px;
+                border: 2px solid black;
+                box-shadow: 0 4px 10px ;
+            }
+            .PLATS img{
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+             .PLATE{
+                display: flex;
+                gap: 20PX;
+                justify-content: center;
+                height: auto;
+                
+            }
+            .PLATSE{
+                width: 24%;
+                background: white;
+                border-radius: 10px;
+                border: 2px solid black;
+                box-shadow: 0 4px 10px ;
+                text-align: center;
+            }
+            .PLATSE img{
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+            .BAMBA{
+                text-align: center;
+                color: #7C2D12;
+                font-weight: bold;
+                text-shadow: 0 4px 8px black;
+                font-family: Playfair display;
+            }
+            .footer{
+                background-color: #7C2D12;
+                height: auto;
+                margin: 0% auto;
+                width: 100%;
+            }
+            .MATAR{
+              
+                justify-content: space-between;
+                display: flex;
+                height: 390px;
+               
+            }
+            .contact{
+                width: 23%;
+               text-align: center;
+               font-size: 40px;
+            }
+             .contactS{
+                width: 23%;
+               text-align: left;
+               font-size: 40px;
+            }
+            .INST{
+            display: block;
+            width: 100%;
+            height: 40px;
+            
+           }
+           @media (max-width: 1024PX){
+               .BANNER{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+                .footer{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: auto;
+                       padding: 60px;
+                }
+             .PLAT{
+                display: grid;
+                width: 95%;
+                gap: 20PX;
+                grid-template-columns: repeat(4,1fr);
+             }
+             .PLATE{
+                display: grid;
+                width: 95%;
+                gap: 20PX;
+                grid-template-columns: repeat(4,1fr);
+                   padding: 60px;
+             }
+             .PLATS{
+                width: 100%;
+             }
+             .PLATSE{
+                width: 100%;
+             }
+              .MATAR{
+                width: 100%;
+             }
+             .TROIS,
+             .BOUTON{
+                width: 100%;
+             }
+           }
+            @media (max-width: 840PX){
+                 HEADER{
+                    height: auto;
+                   
+                    padding: 20px;
+                }
+                nav{
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 15px;
+                  
+                }
+                .BANNER{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns:  repeat(1,1fr);
+                    flex-direction: column;
+                    align-items: center;
+                    min-height: 500px;
+                }
+                
+                .PRESENTATION{
+                    width: 100%;
+                    padding: 60px;
+                }
+                  .footer{
+                    width: auto;
+                    height: auto;
+                  
+                }
+             .PLAT{
+                display: grid;
+                width: 90%;
+                gap: 20PX;
+                grid-template-columns:repeat(2,1fr);
+              align-items: center;
+             }
+             .PLATE{
+                display: grid;
+                width: 95%;
+                gap: 20PX;
+                grid-template-columns: repeat(2,1fr); 
+                 padding: 60px;
+                 align-items: center;
+             }
+                 .PLATS{
+                width: 100%;
+             }
+             .PLATSE{
+                width: 100%;
+             }
+              .MATAR{
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+             }
+             .TROIS,
+             .BOUTON{
+                width: 100%;
+             }
+           }
+            @media (max-width: 400PX){
+                   .BANNER{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    flex-direction: column;
+                    align-items: center;
+                    min-height: 300px;
+                }
+                   .PRESENTATION{
+                    width: 100%;
+                    padding: 60px;
+                }
+                  .footer{
+                    height: auto;
+                   width: auto;
+                }
+             .PLAT{
+                display: grid;
+                width: 90%;
+                gap: 20PX;
+                grid-template-columns:repeat(1,1fr);
+                align-items: center;
+             }
+             .PLATE{
+                display: grid;
+                width: 95%;
+                gap: 20PX;
+                grid-template-columns: repeat(1,1fr);
+                align-items: center;
+             }
+                 .PLATS{
+                width: 100%;
+             }
+             .PLATSE{
+                width: 100%;
+             }
+             .MATAR{
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+             }
+             .TROIS,
+             .BOUTON{
+                width: 100%;
+             }
+           }
+    </style>
+</head>
+<body>
+  <HEADER>
+    <DIV class="LOGO">
+        <img src="TERANGA FOOD.jpg" alt="LOGO">
+    </DIV>
+    <NAV >
+        <a href="menu.HTML">menu</a>
+        <a href="ABOUT.HTML">about</a>
+        <a href="GALERIE.HTML">galerie</a>
+        <a href="RESERVATION.HTML">reservation</a>
+        <a href="CONTACT.HTML">contact</a>
+    </NAV>
+  </HEADER>  
+  <DIV class="BANNER">
+   <DIV class="TROIS"> <h1 class="un">L'AME DU SENEGAL DANS CHAQUE BOUCHEE</h1>
+    <p class="DEUX">Entrez et laissez cous emporter par une explosion de saveurs senegalaises authenthique dans une ambiance chaleureuse et inoubliable </p>
+   </DIV>
+   <DIV class="BOUTON">
+    <button class="menu">Voir le menu </button>
+    <button class="table">Réserver une table</button>
+   </DIV>
+  </DIV>
+  <DIV class="PRESENTATION">
+    <h2 class="CITY">YEKSIL AK JAAM BIR TERANGA FOOD</h2>
+    <P class="EVERTON">Bienvenue dans notre restaurant sénégalais,un lieu où la tradition culinaire rencontre la modernité
+        Nous vous proposons une cuisine authentique ,riche en saveur et inspirée du patrimoine sénégalais 
+        chaque plat est préparé avec passion pour vous offrir une experience unique et chaleureuse 
+    </P>
+  </DIV>
+  <DIV class="MENU">
+    <H2 class="BAMBA">NOS PLATS TERANGA <br><SPan style="color: #D97706;">TOUT A 2500F</SPan></H2>
+    <DIV class="PLAT">
+    <DIV class="PLATS">
+        <img src="Senegalese food Thieboudienne.jpg" alt="thieboudiene">
+        <h3 style="color: #7C2D12;">THIEBOUDIENE</h3>
+        <p>riz au poisson, spécialite nationale</p>
+    </DIV>
+    <DIV class="PLATS">
+        <img src="Tiebou guinar riz au poulet sénégalais.jpg" alt="mafé">
+        <h3 style="color: #7C2D12;">MAFE</h3>
+        <p>sauce arachide au viande </p>
+    </DIV>
+    <DIV class="PLATS">
+        <img src="YASSA POULET.jpg" alt="yassa poulet">
+        <h3 style="color: #7C2D12;">YASSA POULET</h3>
+        <p>Poulet marinée citron-oignons</p>
+    </DIV>
+    <DIV class="PLATS">
+        <img src="YASSA POULET.jpg" alt="yassa poulet">
+        <h3 style="color: #7C2D12;">YASSA POULET</h3>
+        <p>Poulet marinée citron-oignons</p>
+    </DIV>
+</DIV>
+ </DIV>  
+ <h2 class="BAMBA">PLAT TRADITIONNELS</h2>
+<DIV class="PLATE">
+    <DIV class="PLATSE">
+       <img src="Senegalese food Thieboudienne.jpg" alt="thieboudiene">
+        <h3 style="color: #7C2D12;">THIEBOUDIENE</h3>
+        <p>riz au poisson, spécialite nationale</p>
+    </DIV>
+    <DIV class="PLATSE">
+        <img src="Tiebou guinar riz au poulet sénégalais.jpg" alt="mafé">
+        <h3 style="color: #7C2D12;">MAFE</h3>
+        <p>sauce arachide au viande </p>
+    </DIV>
+    <DIV class="PLATSE">
+        <img src="YASSA POULET.jpg" alt="yassa poulet">
+        <h3 style="color: #7C2D12;">YASSA POULET</h3>
+        <p>Poulet marinée citron-oignons</p>
+    </DIV>
+     <DIV class="PLATSE">
+        <img src="Soupe kandjé express.jpg" alt="soupou kandia">
+        <h3 style="color: #7C2D12;">SOUPE KANDIA</h3>
+        <p>Poulet marinée citron-oignons</p>
+    </DIV>
+</DIV>
+ <div class="footer">
+    <h3 style="color: #D97706; font-weight: bold; font-family: POPPINS; font-size: 40px; text-align: center;">teranga food</h3>
+    <DIV class="MATAR">
+    <div class="contact">
+        <H3 style="color: #D97706; font-weight: bold; font-size: 35px; text-align: center;">CONTACT</H3>
+        <i class="fa-solid fa-map-location-dot" style="color: #D97706;"></i>
+        <P style="font-size: 20px; color: #1C1917; font-weight: bold;">PLAGE DES MAMELLES</P>
+        <P style="color: #1C1917; font-size: 20px;font-weight: bold;">DAKAR,SENEGAL</P>
+    </div>
+    <div class="contact">
+        <H3 style="color: #D97706; font-weight: bold; font-size: 35px; text-align: center;">HORAIRE</H3>
+          <i class="fa-solid fa-business-time" style="color: #D97706;"></i>
+        <DIV><span style="color: #1C1917; font-weight: bold; font-size: 20px;">LUNDI-VENDREDI</span></DIV>
+        <DIV> <span style="color: #1C1917; font-weight: bold; font-size: 20px;">10H00-22h00</span></DIV>
+         <DIV><span style="color: #1C1917; font-weight: bold; font-size: 20px;">WEEK-END</span></DIV>
+         <DIV><span style="color: #1C1917; font-weight: bold; font-size: 20px;">9H00-00h00</span></DIV>
+    </div>
+    <div class="contactS">
+        <H3 style="color: #D97706; font-weight: bold; font-size: 35px; text-align: center;">SUIVEZ-NOUS</H3>
+         <DIV class="INST"><i class="fa-brands fa-square-facebook" style="color: rgb(232, 76, 19);"></i><a href="https://www.facebook.com" style="text-decoration: none;"><SPan style="color: #1C1917; font-size: 18px; font-weight: bold; padding: 15px;">@TERANGAFOOD221</SPan></a></DIV><br>
+         <DIV class="INST"><i class="fa-brands fa-tiktok" style="color: rgb(194, 92, 56);"></i><a href="https://www.TIKTOK.com" style="text-decoration: none;"><SPan style="color: #1C1917; font-size: 18px; font-weight: bold; padding: 15px;">@TERANGAFOOD221</SPan></a></DIV><br>
+        <DIV class="INST"><i class="fa-brands fa-instagram" style="color: rgb(241, 70, 7);"> </i><a href="https://www.instagram.com" style="text-decoration: none;"><SPan style="color: #1C1917; font-size: 18px; font-weight: bold; padding: 15px;">@TERANGAFOOD221</SPan></a></DIV>
+    </div>
+    <DIV class="contact">
+        <H3 style="color: #D97706; font-weight: bold; font-size: 35px; text-align: center;">RESERVATION</H3>
+    <a href="tel:+221771329950 "  style="text-decoration: none;"><span style="font-size: 18px; text-decoration: none; font-weight: bold;color: #1C1917;">+221 77 132 99 50</span></a>
+    <a href="tel:+2217713299S50 "  style="text-decoration: none;"><span style="font-size: 18px; text-decoration: none; font-weight: bold;color: #1C1917;">+221 75 132 99 50</span></a>
+    <a href="EMAIL" style="text-decoration: none;"><span style="font-size: 18px; text-decoration: none; font-weight: bold;color: #1C1917;">momotheking2006@gmail.com</span></a>
+    <a href="RESERVATION"  style="text-decoration: none;"><span style="font-size: 18px; text-decoration: none; font-weight: bold;color: #1C1917;">allez sur notre page de reservation </span></a>
+    </DIV>
+</DIV>
+<DIV ><span style="color: #1C1917;margin-left: 40%; text-align: center;">Copyright © 2026 TERANGA FOOD. Tous droits réservés.</span>
+</DIV>
+ </div>
+</html>
