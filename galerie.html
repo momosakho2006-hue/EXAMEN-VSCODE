@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESERVATION</title>
+    <title>GALERIE</title>
     <STYLE>
-          body{
+        body{
             margin: 0%;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -19,7 +19,6 @@
             position: fixed;
             width: 100%;
             top: 0%;
-            margin-bottom: 100px;
         }
         .LOGO{
             height: 80px;
@@ -57,65 +56,11 @@
            font-size: 22px;
             border-right: 0%;
         }
-        .MLK{
-            font-size: 35px;
-            font-weight: bold;
-            font-family: DISPLAY;
-            text-align: center;
-            color: #7C2D12;
-        }
-        .PAPA{
-            border: 2px solid black;
-            margin-top: 120px;
-           width: 90%;
-            margin-left: 5%;
-            height: 1000px;
-            padding-bottom: 100px;
-        }
-        .DIP{
-            
-            height: 100px;
-            width: 100%;
-            margin-bottom: 20px;
-            align-items: center;
-        }
-        .DIP input{
-            height: 50px;
-            width: 80%;
-            border-radius: 15px;
-            font-size: 18px;
-            background-color: #7C2D12;
-            color: #D97706;
-            margin-top: 25px;
-            margin-left: 15%;
 
-        }
-         .DIPS{
-            
-            height: 100px;
-            width: 100%;
-            margin-bottom: 20px;
-            align-items: center;
-            margin-left: 0%;
-         
-        }
-          .DIPS input{
-            height: 100px;
-            width: 80%;
-            border-radius: 15px;
-            font-size: 18px;
-            background-color: #7C2D12;
-            color: #D97706;
-            margin-top: 25px;
-            margin-left: 15%;
-            margin-bottom: 30px;
-
-        }
-        .footer{
+           .footer{
                 background-color: #7C2D12;
                 height: 500px;
                 margin: 0% auto;
-                margin-top: 100px;
             }
             .MATAR{
               
@@ -139,55 +84,94 @@
             height: 40px;
             
            }
-       .FALL{
-        font-size: 20px;
-        font-weight: bold;
-        margin-left: 14%;
-        top: 30px;       
-       }
-       .POIT{
-        border: 2px solid black;
-        color: #D97706;
-        background-color: #7C2D12;
-        font-weight: bold;
-        font-size: 30px;
-        align-items: center;
-        width: 20%;
-        height: 50px;
-        border-radius: 10px;
-        margin-left: 40%;
-       }
-       @media(max-width: 1024px){
-        .footer{
-                    width: auto;
-                    height: auto;
-                }
-                  .MATAR{
-                height: auto;
-                flex-direction: column;
-                align-items: center;
-             }
-       .POIT{
-        width: auto;
-        height: auto;
-       }
+           .PAPI{
+            font-family: DISPLAY;
+            font-weight: bold;
+            font-size: 35px;
+            color: #7C2D12;
+            text-align: center;
+            margin-top: 150px;
+           }
+           .GALERIE{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20PX;
+            justify-content: space-between;
+            width: 96%;
+            align-items: center;
+           }
+           .GALERIE img{
+            width: 100%;
+            object-fit: cover;
+            height: 350px;
+            border-radius: 15px;
+            transition: 0.5s;
+            box-shadow: 5px 3px 4PX 5px;
+            border: 2px solid black;
+           }
+           @media(max-width:1024px){
              
-       }
-        @media(max-width: 840px){
-        .footer{
-                    width: auto;
-                    height: auto;
-                }
-                  .MATAR{
+                   .footer{
                 height: auto;
+               }
+               .MATAR{
                 flex-direction: column;
-                align-items: center;
-             }
-             .PAPA{
-                width: auto;
                 height: auto;
-             }
-                HEADER{
+                align-items: center;
+               }
+               .contact,
+               .contactS{
+                width: 100%;
+                margin-bottom: 30px;
+               }
+               .GALERIE{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+               
+               }
+               .PAPI{
+                padding-top: 60px;
+               }
+           }
+               @media(max-width: 840px){
+               HEADER{
+                    height: auto;
+                    flex-direction: column;
+                    padding: 20px;
+                }
+                nav{
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 15px;
+                    flex-wrap: wrap;
+                   
+                }
+                   .footer{
+                height: auto;
+                align-items: center;
+                text-align: center;
+               }
+               .MATAR{
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+               }
+               .contact,
+               .contactS{
+                width: 100%;
+                margin-bottom: 30px;
+               }
+               .GALERIE{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+              
+               }
+                .PAPI{
+                padding-top: 280px;
+               }
+           }
+               @media(max-width:400px){
+               HEADER{
                     height: auto;
                     flex-direction: column;
                     padding: 20px;
@@ -198,91 +182,66 @@
                     margin-top: 15px;
                     flex-wrap: wrap;
                 }
-                   .POIT{
-        width: auto;
-        height: auto;
-        font-size: 23px;
-       }
-       }
-        @media(max-width: 400px){
-        .footer{
-                    width: auto;
-                    height: auto;
-                }
-                  .MATAR{
+                   .footer{
                 height: auto;
-                flex-direction: column;
-                align-items: center;
-             }
-             .PAPA{
                 width: auto;
+               }
+               .MATAR{
+                flex-direction: column;
                 height: auto;
-             }
-                HEADER{
-                    height: auto;
-                    flex-direction: column;
-                    padding: 20px;
-                }
-                nav{
-                    width: 100%;
-                    justify-content: center;
-                    margin-top: 15px;
-                    flex-wrap: wrap;
-                }
-                   .POIT{
-        width: auto;
-        height: auto;
-        font-size: 16px;
-       }
-       }
+                width: auto;
+                align-items: center;
+               }
+               .contact,
+               .contactS{
+                width: 100%;
+                margin-bottom: 30px;
+               }
+               .GALERIE{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+              ;
+               }
+                .PAPI{
+                padding-top: 300px;
+               }
+           }
     </STYLE>
 </head>
 <body>
-     <HEADER>
+    <HEADER>
     <DIV class="LOGO">
         <img src="TERANGA FOOD.jpg" alt="LOGO">
     </DIV>
-    <NAV >
+    <NAV >   
         <a href="index.html">accueil</a>
         <a href="menu.html">menu</a>
         <a href="about.html">about</a>
         <a href="galerie.html">galerie</a>
         <a href="reservation.html">reservation</a>
+     
     </NAV>
   </HEADER>  
-   <form class="PAPA">
-    <H1 class="MLK">RESERVATION</H1>
-    <DIV class="DIP">
-        <label class="FALL">NOM&PRENOM</label>
-    <input type="text" placeholder="NOM COMPLET"  required>
-</DIV>
-     <DIV class="DIP">
-         <label class="FALL" >ADRESSE EMAIL</label>
-     <input type="email" placeholder="ADRESSE EMAIL">
+    <h1 class="PAPI">GALERIE DU RESTAURANT</h1>
+    <DIV class="GALERIE">
+        <img src="PERSONEL.jpg" alt="personnel">
+        <img src="CUISINE.jpg" alt="cuisine">
+        <img src="RESTAURANT.jpg" alt="deco">
+        <img src="téléchargement (72).jpg" alt="terasse">
+
+       
+        <img src="Senegalese food Thieboudienne.jpg" alt="thieboudienne">
+        <img src="YASSA POULET.jpg" alt="yassa">
+        <img src="Tiebou guinar riz au poulet sénégalais.jpg" alt="mafe">
+        <img src="téléchargement (62).jpg" alt="poisson">
+
+
+        <img src="bisap.jpg" alt="bissap">
+        <img src="bouye .jpg" alt="bouye">
+        <img src="téléchargement (65).jpg" alt="orange">
+        <img src="téléchargement (67).jpg" alt="limonade">
     </DIV>
-      <DIV class="DIP">
-         <label class="FALL">NUMERO DE TELEPHONE</label>
-      <input type="tel" placeholder="TELEPHONE" required>
-    </DIV>
-       <DIV class="DIP">
-         <label class="FALL">DATE A RESERVER</label>
-       <input type="date" placeholder="date reservation" required>
-    </DIV>
-        <DIV class="DIP">
-             <label class="FALL">HEURE A RESERVER</label>
-       <input type="time" required>
-    </DIV>
-        <DIV class="DIP">
-             <label class="FALL">NOMBRE DE PERSONNE</label>
-        <input type="number" placeholder="NOMBRE DE PERSONNE " required>
-    </DIV>
-         <DIV class="DIPS">
-            <LABel class="FALL">MESSAGE</LABel>
-        <input type="text" placeholder="MESSAGE">
-        <button class="POIT">RESERVER</button>
-    </DIV>
-   </form>
-  <div class="footer">
+   <div class="footer">
     <h3 style="color: #D97706; font-weight: bold; font-family: POPPINS; font-size: 40px; text-align: center;">teranga food</h3>
     <DIV class="MATAR">
     <div class="contact">
